@@ -218,7 +218,7 @@ body {
   
   /* media queries */
   
-
+  /* desktop layout is about 960px wide */
   @media screen and (max-width: 980px) {
     body {
       margin-left: 10px;
@@ -228,35 +228,40 @@ body {
       width: 85%;
       
     }
+    /* Make the position of the header  static */
     #masthead {
-      width: 80%;
+      width: 85%;
       position: static;
     }
   }
+  /* about the width of a tablet */
   @media screen and (max-width: 768px) {
-      body {
+    body {
         background-color: yellow;
-      }
-      .container {
+    }
+    .container {
         width: 650px;
-      } 
-      #masthead {
+    } 
+    /* Make the position of the header  static */
+    #masthead {
         width: 650px; 
         position: static;
       
-      }
     }
+   }
+   /* about the width of a phone in landscape */
   @media screen and (max-width: 640px) {
-        body {
-          background-color: green;
-          margin:0 auto;
-        }
-        .container {
-          width: 85%;
-         
-        }
-        #masthead {
-          width: 80%;
-          position: static;
-        } 
-      }
+    body {
+        background-color: green;
+        margin:0 auto;
+    }
+    .container {
+        width: 85%;
+            
+    }
+    /* Make the position of the header  static */
+    #masthead {
+        width: 85;
+        position: static;
+    } 
+   }
